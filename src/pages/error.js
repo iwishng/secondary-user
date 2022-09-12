@@ -7,13 +7,13 @@ const Error = () => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
-    <div className='min-h-[80vh] flex flex-col justify-center items-center bg-white h-screen text-gray-800'>
+    <div className='min-h-[80vh] flex flex-col justify-center items-center text-gray-800'>
       <div className='flex justify-center items-center'>
-        <h4 className='text-[5rem] sm:text-[18rem] font-bold'>4</h4>
+        <h4 className='text-[5rem] sm:text-[19rem] font-bold'>4</h4>
         <span>
-          <img src={horse} className='w-44 sm:w-72' alt='horse' />
+          <img src={horse} className='w-48 sm:w-72' alt='horse' />
         </span>
-        <h4 className='text-[5rem] sm:text-[18rem] font-bold '>4</h4>
+        <h4 className='text-[5rem] sm:text-[19rem] font-bold '>4</h4>
       </div>
       <div className='sm:-mt-20 flex flex-col justify-center items-center'>
         <p className='text-center p-2 text-base font-bold'>
@@ -23,7 +23,7 @@ const Error = () => {
         </p>
         <Link to='/'>
           <button className='py-3 px-6 my-4 rounded-lg bg-[#7805A7] text-sm text-white  w-fit'>
-            Back Home
+            Go to Homepage
           </button>
         </Link>
       </div>
