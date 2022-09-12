@@ -7,7 +7,7 @@ const Error = () => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
-    <div className='min-h-[80vh] flex flex-col justify-center items-center text-gray-800'>
+    <div className='min-h-[80vh] flex flex-col justify-center items-center text-gray-800 bg-white'>
       <div className='flex justify-center items-center'>
         <h4 className='text-[5rem] sm:text-[19rem] font-bold'>4</h4>
         <span>
