@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import mail from "../images/mail.png";
 import Shared from "../components/shared";
-// import call from "../images/call.png";
-// import venue from "../images/venue.png";
 
 const Contact = () => {
   useEffect(() => {
@@ -20,20 +18,10 @@ const Contact = () => {
         <div className='grid md:grid-cols-2 p-6 sm:p-12 shadow-md border-2 border-gray-50 text-gray-800 w-[95%] sm:w-[75%] mx-auto gap-4 gap-y-8'>
           <div>
             <h1 className='text-xl font-bold my-2'>Contact us</h1>
-            {/* <div className='flex space-x-4 items-start my-4'>
-            <img src={venue} className='w-5' alt='' />
-            <h2 className='text-sm sm:text-base'>
-              1018 Riddle Hill Hwy, Little Rock, <br /> Arkansas, 40401
-            </h2>
-          </div> */}
             <div className='flex space-x-4 items-center my-4'>
               <img src={mail} className='w-5' alt='' />
               <h2 className='text-sm sm:text-base'>hello@iwish.ng</h2>
             </div>
-            {/* <div className='flex space-x-4 items-center my-4'>
-            <img src={call} className='w-5' alt='' />
-            <h2 className='text-sm sm:text-base'>+234 123 45666</h2>
-          </div> */}
           </div>
           <div>
             <h1 className='text-xl my-2 font-extrabold'>

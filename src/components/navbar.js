@@ -3,9 +3,11 @@ import logo from "../images/logo.png";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
+  const { ind } = useGlobalContext();
   return (
     <nav className=' w-full bg-white'>
       <div className='max-w-7xl w-[90%] mx-auto flex py-4 sm:py-0 flex-col md:flex-row justify-between  md:items-center'>
@@ -28,9 +30,9 @@ const Nav = () => {
           <Link to='/' onClick={() => setNav(false)}>
             <h4 className='my-5'>Home</h4>
           </Link>
-          <Link to='/feature' onClick={() => setNav(false)}>
-            <h4 className='my-5'>Feature</h4>
-          </Link>
+          {/* <Link to='/feature' onClick={() => setNav(false)}>
+            <h4 className={`${ind ? "flex" : "hidden"} my-5`}>Feature</h4>
+          </Link> */}
           <Link to='/contact' onClick={() => setNav(false)}>
             <h4 className='my-5'>Contact Us</h4>
           </Link>
